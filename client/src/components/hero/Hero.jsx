@@ -30,7 +30,7 @@ export const Hero = ({ movies }) => {
                       <img src={item.poster} alt="" />
                     </div>
                     <div className="movie-title">
-                      <h4>{item.title}</h4>
+                      <h1>{item.title}</h1>
                     </div>
 
                     <div className="movie-buttons-container">
