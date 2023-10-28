@@ -43,12 +43,19 @@ const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
     <Container>
       <Row>
         <Col>
-          <h3>Reviews</h3>
+          <h1>Reviews</h1>
         </Col>
       </Row>
       <Row className="mt-2">
-        <Col>
-          <img src={movie?.poster} alt="" />
+        <Col style={{ maxHeight: "80vh" }}>
+          <img
+            src={movie?.poster}
+            alt=""
+            style={{
+              objectFit: "cover",
+            }}
+            height={580}
+          />
         </Col>
         <Col>
           {
